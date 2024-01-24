@@ -54,7 +54,7 @@ if __name__ == "__main__":
     redis_client = redis.Redis()
 
     # Test example usage
-    url = "http://slowwly.robertomurray.co.uk"
+    url = "http://slowwly.robertomurray.co.uk/delay/1000/url/https://www.skaleway.com"
     for _ in range(5):
         content = get_page(url)
         print(content)
