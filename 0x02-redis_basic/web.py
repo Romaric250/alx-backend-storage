@@ -54,11 +54,11 @@ if __name__ == "__main__":
     redis_client = redis.Redis()
 
     # Test example usage
-    url = "http://slowwly.robertomurray.co.uk/delay/1000/url/https://www.skaleway.com"
+    url = "http://slowwly.robertomurray.co.uk"
     for _ in range(5):
         content = get_page(url)
         print(content)
-        time.sleep(1)  # Simulate delay
+        time.sleep(1)
 
     # Printing the number of times the URL was accessed
     count_key = f"count:{url}"
